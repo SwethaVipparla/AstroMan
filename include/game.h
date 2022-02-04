@@ -37,7 +37,7 @@ public:
     std::vector<GameLevel>  Levels;
     // std::vector<PowerUp>    PowerUps;
     unsigned int            Level;
-    unsigned int            Lives;
+    unsigned int            Score;
     // constructor/destructor
     Game(unsigned int width, unsigned int height);
     ~Game();

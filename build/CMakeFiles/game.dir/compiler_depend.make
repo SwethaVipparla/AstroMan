@@ -594,6 +594,35 @@ CMakeFiles/game.dir/src/game.cpp.o: ../src/game.cpp \
   /usr/include/c++/11/bits/istream.tcc \
   /usr/include/c++/11/bits/sstream.tcc \
   /usr/include/c++/11/iostream \
+  /usr/include/freetype2/ft2build.h \
+  /usr/include/freetype2/freetype/config/ftheader.h \
+  /usr/include/freetype2/freetype/freetype.h \
+  /usr/include/freetype2/freetype/config/ftconfig.h \
+  /usr/include/freetype2/freetype/config/ftconfig-64.h \
+  /usr/include/freetype2/freetype/config/ftoption.h \
+  /usr/include/freetype2/freetype/config/ftstdlib.h \
+  /usr/lib/gcc/x86_64-redhat-linux/11/include/limits.h \
+  /usr/lib/gcc/x86_64-redhat-linux/11/include/syslimits.h \
+  /usr/include/limits.h \
+  /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/local_lim.h \
+  /usr/include/linux/limits.h \
+  /usr/include/bits/posix2_lim.h \
+  /usr/include/bits/xopen_lim.h \
+  /usr/include/bits/uio_lim.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/c++/11/stdlib.h \
+  /usr/include/setjmp.h \
+  /usr/include/freetype2/freetype/config/integer-types.h \
+  /usr/include/freetype2/freetype/config/public-macros.h \
+  /usr/include/freetype2/freetype/config/mac-support.h \
+  /usr/include/freetype2/freetype/fttypes.h \
+  /usr/include/freetype2/freetype/ftsystem.h \
+  /usr/include/freetype2/freetype/ftimage.h \
+  /usr/include/freetype2/freetype/fterrors.h \
+  /usr/include/freetype2/freetype/ftmoderr.h \
+  /usr/include/freetype2/freetype/fterrdef.h \
   ../include/game.h \
   ../libraries/glad/include/glad/glad.h \
   ../libraries/glad/include/KHR/khrplatform.h \
@@ -628,15 +657,6 @@ CMakeFiles/game.dir/src/game.cpp.o: ../src/game.cpp \
   /usr/include/c++/11/tr1/poly_laguerre.tcc \
   /usr/include/c++/11/tr1/riemann_zeta.tcc \
   /usr/include/c++/11/climits \
-  /usr/lib/gcc/x86_64-redhat-linux/11/include/limits.h \
-  /usr/lib/gcc/x86_64-redhat-linux/11/include/syslimits.h \
-  /usr/include/limits.h \
-  /usr/include/bits/posix1_lim.h \
-  /usr/include/bits/local_lim.h \
-  /usr/include/linux/limits.h \
-  /usr/include/bits/posix2_lim.h \
-  /usr/include/bits/xopen_lim.h \
-  /usr/include/bits/uio_lim.h \
   /usr/include/c++/11/cfloat \
   /usr/lib/gcc/x86_64-redhat-linux/11/include/float.h \
   /usr/include/c++/11/cassert \
@@ -650,7 +670,6 @@ CMakeFiles/game.dir/src/game.cpp.o: ../src/game.cpp \
   /usr/lib/gcc/x86_64-redhat-linux/11/include/xmmintrin.h \
   /usr/lib/gcc/x86_64-redhat-linux/11/include/mmintrin.h \
   /usr/lib/gcc/x86_64-redhat-linux/11/include/mm_malloc.h \
-  /usr/include/c++/11/stdlib.h \
   ../libraries/glm/glm/detail/type_float.hpp \
   ../libraries/glm/glm/detail/type_vec.hpp \
   ../libraries/glm/glm/detail/precision.hpp \
@@ -827,8 +846,6 @@ CMakeFiles/game.dir/src/game.cpp.o: ../src/game.cpp \
   ../libraries/glm/glm/gtc/quaternion.inl \
   ../libraries/glm/glm/gtc/quaternion_simd.inl \
   /usr/include/c++/11/cstring \
-  /usr/include/string.h \
-  /usr/include/strings.h \
   ../libraries/glm/glm/gtc/type_ptr.inl \
   ../include/game_level.h \
   ../include/resource_manager.h \
@@ -836,11 +853,11 @@ CMakeFiles/game.dir/src/game.cpp.o: ../src/game.cpp \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/bits/stl_multimap.h \
-  ../include/enemies.h \
   ../include/resource_manager.h \
   ../include/sprite_renderer.h \
   ../include/game_object.h \
-  ../include/ball_object.h
+  ../include/ball_object.h \
+  ../include/text_renderer.h
 
 CMakeFiles/game.dir/src/game_level.cpp.o: ../src/game_level.cpp \
   /usr/include/stdc-predef.h \
@@ -2068,7 +2085,6 @@ CMakeFiles/game.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/bits/stl_multimap.h \
   /usr/include/c++/11/bits/erase_if.h \
-  ../include/enemies.h \
   ../include/resource_manager.h \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/ostream \
@@ -4073,18 +4089,6 @@ CMakeFiles/game.dir/src/texture.cpp.o: ../src/texture.cpp \
 
 ../src/texture.cpp:
 
-/usr/include/freetype2/freetype/ftmoderr.h:
-
-/usr/include/freetype2/freetype/fterrors.h:
-
-/usr/include/freetype2/freetype/ftsystem.h:
-
-/usr/include/freetype2/freetype/config/integer-types.h:
-
-/usr/include/setjmp.h:
-
-/usr/include/freetype2/freetype/config/ftoption.h:
-
 ../src/text_renderer.cpp:
 
 ../src/sprite_renderer.cpp:
@@ -4101,8 +4105,6 @@ CMakeFiles/game.dir/src/texture.cpp.o: ../src/texture.cpp \
 
 /usr/include/c++/11/fstream:
 
-../include/enemies.h:
-
 /usr/include/c++/11/bits/stl_tree.h:
 
 /usr/include/c++/11/map:
@@ -4112,6 +4114,18 @@ CMakeFiles/game.dir/src/texture.cpp.o: ../src/texture.cpp \
 ../include/game_level.h:
 
 ../include/game.h:
+
+/usr/include/freetype2/freetype/ftmoderr.h:
+
+/usr/include/freetype2/freetype/fterrors.h:
+
+/usr/include/freetype2/freetype/ftsystem.h:
+
+/usr/include/freetype2/freetype/config/integer-types.h:
+
+/usr/include/setjmp.h:
+
+/usr/include/freetype2/freetype/config/ftoption.h:
 
 /usr/include/c++/11/bits/ostream.tcc:
 

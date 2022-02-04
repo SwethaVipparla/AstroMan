@@ -1,12 +1,15 @@
 #include <algorithm>
 #include <sstream>
 #include <iostream>
+#include <ft2build.h>
+#include <freetype/freetype.h>
 
 #include "game.h"
 #include "resource_manager.h"
 #include "sprite_renderer.h"
 #include "game_object.h"
 #include "ball_object.h"
+#include "text_renderer.h"
 
 // Initial size of the player paddle
 const glm::vec2 PLAYER_SIZE(100.0f, 10.0f);
@@ -20,6 +23,12 @@ const float BALL_RADIUS = 30.0f;
 SpriteRenderer  *Renderer;
 GameObject        *Player;
 BallObject        *Ball;
+BallObject *Enemy;
+TextRenderer *Text;
+TextRenderer *gameEnded;
+TextRenderer *newLevel;
+
+time_t start = time(0);
 
 Game::Game(unsigned int width, unsigned int height)
         : State(GAME_ACTIVE), Keys(), Width(width), Height(height)
@@ -30,7 +39,7 @@ Game::Game(unsigned int width, unsigned int height)
 Game::~Game()
 {
     delete Renderer;
-    delete Player;
+    delete Ball;
 }
 
 void Game::Init()
@@ -52,6 +61,7 @@ void Game::Init()
     ResourceManager::LoadTexture("../src/textures/awesomeface.png", false, "backgound");
     ResourceManager::LoadTexture("../src/textures/player.png", true, "player");
     ResourceManager::LoadTexture("../src/textures/door.jpg", true, "door");
+    ResourceManager::LoadTexture("../src/textures/enemy.png", true, "enemy");
 
     Renderer = new SpriteRenderer(ResourceManager::GetShader("sprite"));
     // Text = new TextRenderer(this->Width, this->Height);
@@ -67,6 +77,7 @@ void Game::Init()
     this->Levels.push_back(two);
     this->Levels.push_back(three);
     this->Level = 0;
+    this->Score = 0;
 
     glm::vec2 playerPos = glm::vec2(this->Width / 2.0f - PLAYER_SIZE.x / 2.0f, (this->Height - PLAYER_SIZE.y)/2);
     // Player = new GameObject(playerPos, PLAYER_SIZE, ResourceManager::GetTexture("player"));
@@ -74,11 +85,18 @@ void Game::Init()
                                               -BALL_RADIUS * 2.0f);
     Ball = new BallObject(ballPos, BALL_RADIUS, INITIAL_BALL_VELOCITY,
         ResourceManager::GetTexture("player"));
+    glm::vec2 e1Pos = glm::vec2(this->Height / 2, this->Width / 2);
+    Enemy = new BallObject(e1Pos, BALL_RADIUS, INITIAL_BALL_VELOCITY,
+                            ResourceManager::GetTexture("enemy"));
+    
+    Text = new TextRenderer(this->Width, this->Height);
+    Text->Load("../src/ocraext.TTF", 100);
 }
 
 void Game::Update(float dt)
 {
     Ball->Move(dt, this->Width);
+    Enemy->Move(dt, this->Width);
     this->DoCollisions();
 
     if(Ball->Position.y <= 0.01f)
@@ -131,7 +149,17 @@ void Game::Render()
 
         // draw player
         Ball->Draw(*Renderer); 
+        std::stringstream scr, lev, tim;
+        scr << this->Score;
+        lev << this->Level + 1;
 
+        Enemy->Draw(*Renderer);
+
+        double seconds = difftime(time(0), start);
+        char times[100];
+        sprintf(times, "%02d:%02d:%02d", (int)(seconds / 3600), ((int)(seconds / 60)) % 60, (int)(int(seconds) % 60));
+        tim << times;
+        Text->RenderText("Score: " + scr.str() + "   Level: " + lev.str() + "   Elapsed Time: " + tim.str(), 1.0f, 1.0f, 0.25f);
     }
 }
 
@@ -204,14 +232,19 @@ void Game::DoCollisions()
             if(box.IsDoor)
                 continue;
             Collision collision = CheckCollision(*Ball, box);
+            Collision enemy1 = CheckCollision(*Ball, *Enemy);
+    
+        
+
             if (std::get<0>(collision)) // if collision is true
             {
                  if (!box.IsSolid)
                 {
                     box.Destroyed = true;
+                    this->Score += 10;
                 }
                 else
-                {   // if block is solid, enable shake effect
+                {   
                 }
                 // collision resolution
                 Direction dir = std::get<1>(collision);

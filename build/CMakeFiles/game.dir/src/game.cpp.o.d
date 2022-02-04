@@ -143,6 +143,29 @@ CMakeFiles/game.dir/src/game.cpp.o: \
  /usr/include/c++/11/bits/ostream.tcc \
  /usr/include/c++/11/bits/istream.tcc \
  /usr/include/c++/11/bits/sstream.tcc /usr/include/c++/11/iostream \
+ /usr/include/freetype2/ft2build.h \
+ /usr/include/freetype2/freetype/config/ftheader.h \
+ /usr/include/freetype2/freetype/freetype.h \
+ /usr/include/freetype2/freetype/config/ftconfig.h \
+ /usr/include/freetype2/freetype/config/ftconfig-64.h \
+ /usr/include/freetype2/freetype/config/ftoption.h \
+ /usr/include/freetype2/freetype/config/ftstdlib.h \
+ /usr/lib/gcc/x86_64-redhat-linux/11/include/limits.h \
+ /usr/lib/gcc/x86_64-redhat-linux/11/include/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/bits/uio_lim.h /usr/include/string.h /usr/include/strings.h \
+ /usr/include/c++/11/stdlib.h /usr/include/setjmp.h \
+ /usr/include/freetype2/freetype/config/integer-types.h \
+ /usr/include/freetype2/freetype/config/public-macros.h \
+ /usr/include/freetype2/freetype/config/mac-support.h \
+ /usr/include/freetype2/freetype/fttypes.h \
+ /usr/include/freetype2/freetype/ftsystem.h \
+ /usr/include/freetype2/freetype/ftimage.h \
+ /usr/include/freetype2/freetype/fterrors.h \
+ /usr/include/freetype2/freetype/ftmoderr.h \
+ /usr/include/freetype2/freetype/fterrdef.h \
  /home/swetha/Documents/Repos/2D-game/include/game.h \
  /home/swetha/Documents/Repos/2D-game/libraries/glad/include/glad/glad.h \
  /home/swetha/Documents/Repos/2D-game/libraries/glad/include/KHR/khrplatform.h \
@@ -170,12 +193,7 @@ CMakeFiles/game.dir/src/game.cpp.o: \
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
  /usr/include/c++/11/tr1/riemann_zeta.tcc /usr/include/c++/11/climits \
- /usr/lib/gcc/x86_64-redhat-linux/11/include/limits.h \
- /usr/lib/gcc/x86_64-redhat-linux/11/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
- /usr/include/bits/uio_lim.h /usr/include/c++/11/cfloat \
+ /usr/include/c++/11/cfloat \
  /usr/lib/gcc/x86_64-redhat-linux/11/include/float.h \
  /usr/include/c++/11/cassert /usr/include/assert.h \
  /home/swetha/Documents/Repos/2D-game/libraries/glm/glm/fwd.hpp \
@@ -187,7 +205,6 @@ CMakeFiles/game.dir/src/game.cpp.o: \
  /usr/lib/gcc/x86_64-redhat-linux/11/include/xmmintrin.h \
  /usr/lib/gcc/x86_64-redhat-linux/11/include/mmintrin.h \
  /usr/lib/gcc/x86_64-redhat-linux/11/include/mm_malloc.h \
- /usr/include/c++/11/stdlib.h \
  /home/swetha/Documents/Repos/2D-game/libraries/glm/glm/detail/type_float.hpp \
  /home/swetha/Documents/Repos/2D-game/libraries/glm/glm/detail/type_vec.hpp \
  /home/swetha/Documents/Repos/2D-game/libraries/glm/glm/detail/precision.hpp \
@@ -363,7 +380,7 @@ CMakeFiles/game.dir/src/game.cpp.o: \
  /home/swetha/Documents/Repos/2D-game/libraries/glm/glm/gtc/../gtc/quaternion.hpp \
  /home/swetha/Documents/Repos/2D-game/libraries/glm/glm/gtc/../gtc/quaternion.inl \
  /home/swetha/Documents/Repos/2D-game/libraries/glm/glm/gtc/../gtc/quaternion_simd.inl \
- /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
+ /usr/include/c++/11/cstring \
  /home/swetha/Documents/Repos/2D-game/libraries/glm/glm/gtc/type_ptr.inl \
  /home/swetha/Documents/Repos/2D-game/include/game_level.h \
  /home/swetha/Documents/Repos/2D-game/include/resource_manager.h \
@@ -373,4 +390,5 @@ CMakeFiles/game.dir/src/game.cpp.o: \
  /home/swetha/Documents/Repos/2D-game/include/resource_manager.h \
  /home/swetha/Documents/Repos/2D-game/include/sprite_renderer.h \
  /home/swetha/Documents/Repos/2D-game/include/game_object.h \
- /home/swetha/Documents/Repos/2D-game/include/ball_object.h
+ /home/swetha/Documents/Repos/2D-game/include/ball_object.h \
+ /home/swetha/Documents/Repos/2D-game/include/text_renderer.h

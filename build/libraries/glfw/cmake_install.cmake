@@ -1,4 +1,4 @@
-# Install script for directory: /home/swetha/Documents/Repos/Assignment1_2/libraries/glfw
+# Install script for directory: /home/swetha/Documents/Repos/2D-game/libraries/glfw
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,6 +44,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/swetha/Documents/Repos/Assignment1_2/build/libraries/glfw/src/cmake_install.cmake")
+  include("/home/swetha/Documents/Repos/2D-game/build/libraries/glfw/src/cmake_install.cmake")
 endif()
 

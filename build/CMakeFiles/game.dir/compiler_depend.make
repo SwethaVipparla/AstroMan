@@ -836,6 +836,7 @@ CMakeFiles/game.dir/src/game.cpp.o: ../src/game.cpp \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/bits/stl_multimap.h \
+  ../include/enemies.h \
   ../include/resource_manager.h \
   ../include/sprite_renderer.h \
   ../include/game_object.h \
@@ -2067,6 +2068,7 @@ CMakeFiles/game.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/bits/stl_multimap.h \
   /usr/include/c++/11/bits/erase_if.h \
+  ../include/enemies.h \
   ../include/resource_manager.h \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/ostream \
@@ -4098,6 +4100,8 @@ CMakeFiles/game.dir/src/texture.cpp.o: ../src/texture.cpp \
 /usr/include/c++/11/x86_64-redhat-linux/bits/c++io.h:
 
 /usr/include/c++/11/fstream:
+
+../include/enemies.h:
 
 /usr/include/c++/11/bits/stl_tree.h:
 

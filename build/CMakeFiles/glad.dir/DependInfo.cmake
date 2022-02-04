@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/swetha/Documents/Repos/Assignment1_2/libraries/glad/src/glad.c" "CMakeFiles/glad.dir/libraries/glad/src/glad.c.o" "gcc" "CMakeFiles/glad.dir/libraries/glad/src/glad.c.o.d"
+  "/home/swetha/Documents/Repos/2D-game/libraries/glad/src/glad.c" "CMakeFiles/glad.dir/libraries/glad/src/glad.c.o" "gcc" "CMakeFiles/glad.dir/libraries/glad/src/glad.c.o.d"
   )
 
 # Targets to which this target links.

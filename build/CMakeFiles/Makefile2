@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/swetha/Documents/Repos/Assignment1_2
+CMAKE_SOURCE_DIR = /home/swetha/Documents/Repos/2D-game
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/swetha/Documents/Repos/Assignment1_2/build
+CMAKE_BINARY_DIR = /home/swetha/Documents/Repos/2D-game/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -115,14 +115,14 @@ libraries/glfw/src/clean: libraries/glfw/src/CMakeFiles/glfw.dir/clean
 CMakeFiles/glad.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/swetha/Documents/Repos/Assignment1_2/build/CMakeFiles --progress-num=13,14 "Built target glad"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/swetha/Documents/Repos/2D-game/build/CMakeFiles --progress-num=13,14 "Built target glad"
 .PHONY : CMakeFiles/glad.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/glad.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/swetha/Documents/Repos/Assignment1_2/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/swetha/Documents/Repos/2D-game/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/glad.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/swetha/Documents/Repos/Assignment1_2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/swetha/Documents/Repos/2D-game/build/CMakeFiles 0
 .PHONY : CMakeFiles/glad.dir/rule
 
 # Convenience name for target.
@@ -142,14 +142,14 @@ CMakeFiles/game.dir/all: CMakeFiles/glad.dir/all
 CMakeFiles/game.dir/all: libraries/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/swetha/Documents/Repos/Assignment1_2/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/swetha/Documents/Repos/2D-game/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target game"
 .PHONY : CMakeFiles/game.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/game.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/swetha/Documents/Repos/Assignment1_2/build/CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/swetha/Documents/Repos/2D-game/build/CMakeFiles 31
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/game.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/swetha/Documents/Repos/Assignment1_2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/swetha/Documents/Repos/2D-game/build/CMakeFiles 0
 .PHONY : CMakeFiles/game.dir/rule
 
 # Convenience name for target.
@@ -168,14 +168,14 @@ CMakeFiles/game.dir/clean:
 libraries/glfw/src/CMakeFiles/glfw.dir/all:
 	$(MAKE) $(MAKESILENT) -f libraries/glfw/src/CMakeFiles/glfw.dir/build.make libraries/glfw/src/CMakeFiles/glfw.dir/depend
 	$(MAKE) $(MAKESILENT) -f libraries/glfw/src/CMakeFiles/glfw.dir/build.make libraries/glfw/src/CMakeFiles/glfw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/swetha/Documents/Repos/Assignment1_2/build/CMakeFiles --progress-num=15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31 "Built target glfw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/swetha/Documents/Repos/2D-game/build/CMakeFiles --progress-num=15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31 "Built target glfw"
 .PHONY : libraries/glfw/src/CMakeFiles/glfw.dir/all
 
 # Build rule for subdir invocation for target.
 libraries/glfw/src/CMakeFiles/glfw.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/swetha/Documents/Repos/Assignment1_2/build/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/swetha/Documents/Repos/2D-game/build/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libraries/glfw/src/CMakeFiles/glfw.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/swetha/Documents/Repos/Assignment1_2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/swetha/Documents/Repos/2D-game/build/CMakeFiles 0
 .PHONY : libraries/glfw/src/CMakeFiles/glfw.dir/rule
 
 # Convenience name for target.

@@ -20,6 +20,7 @@ public:
     float       Rotation;
     bool        IsSolid;
     bool        Destroyed;
+    bool        IsDoor = false;
     // render state
     Texture2D   Sprite;	
     // constructor(s)

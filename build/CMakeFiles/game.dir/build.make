@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/swetha/Documents/Repos/Assignment1_2
+CMAKE_SOURCE_DIR = /home/swetha/Documents/Repos/2D-game
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/swetha/Documents/Repos/Assignment1_2/build
+CMAKE_BINARY_DIR = /home/swetha/Documents/Repos/2D-game/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/game.dir/depend.make
@@ -72,156 +72,156 @@ include CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/ball_object.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/ball_object.cpp.o: ../src/ball_object.cpp
 CMakeFiles/game.dir/src/ball_object.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swetha/Documents/Repos/Assignment1_2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/game.dir/src/ball_object.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/ball_object.cpp.o -MF CMakeFiles/game.dir/src/ball_object.cpp.o.d -o CMakeFiles/game.dir/src/ball_object.cpp.o -c /home/swetha/Documents/Repos/Assignment1_2/src/ball_object.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swetha/Documents/Repos/2D-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/game.dir/src/ball_object.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/ball_object.cpp.o -MF CMakeFiles/game.dir/src/ball_object.cpp.o.d -o CMakeFiles/game.dir/src/ball_object.cpp.o -c /home/swetha/Documents/Repos/2D-game/src/ball_object.cpp
 
 CMakeFiles/game.dir/src/ball_object.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/src/ball_object.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swetha/Documents/Repos/Assignment1_2/src/ball_object.cpp > CMakeFiles/game.dir/src/ball_object.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swetha/Documents/Repos/2D-game/src/ball_object.cpp > CMakeFiles/game.dir/src/ball_object.cpp.i
 
 CMakeFiles/game.dir/src/ball_object.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/ball_object.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swetha/Documents/Repos/Assignment1_2/src/ball_object.cpp -o CMakeFiles/game.dir/src/ball_object.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swetha/Documents/Repos/2D-game/src/ball_object.cpp -o CMakeFiles/game.dir/src/ball_object.cpp.s
 
 CMakeFiles/game.dir/src/game.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/game.cpp.o: ../src/game.cpp
 CMakeFiles/game.dir/src/game.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swetha/Documents/Repos/Assignment1_2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/game.dir/src/game.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/game.cpp.o -MF CMakeFiles/game.dir/src/game.cpp.o.d -o CMakeFiles/game.dir/src/game.cpp.o -c /home/swetha/Documents/Repos/Assignment1_2/src/game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swetha/Documents/Repos/2D-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/game.dir/src/game.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/game.cpp.o -MF CMakeFiles/game.dir/src/game.cpp.o.d -o CMakeFiles/game.dir/src/game.cpp.o -c /home/swetha/Documents/Repos/2D-game/src/game.cpp
 
 CMakeFiles/game.dir/src/game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/src/game.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swetha/Documents/Repos/Assignment1_2/src/game.cpp > CMakeFiles/game.dir/src/game.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swetha/Documents/Repos/2D-game/src/game.cpp > CMakeFiles/game.dir/src/game.cpp.i
 
 CMakeFiles/game.dir/src/game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/game.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swetha/Documents/Repos/Assignment1_2/src/game.cpp -o CMakeFiles/game.dir/src/game.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swetha/Documents/Repos/2D-game/src/game.cpp -o CMakeFiles/game.dir/src/game.cpp.s
 
 CMakeFiles/game.dir/src/game_level.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/game_level.cpp.o: ../src/game_level.cpp
 CMakeFiles/game.dir/src/game_level.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swetha/Documents/Repos/Assignment1_2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/game.dir/src/game_level.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/game_level.cpp.o -MF CMakeFiles/game.dir/src/game_level.cpp.o.d -o CMakeFiles/game.dir/src/game_level.cpp.o -c /home/swetha/Documents/Repos/Assignment1_2/src/game_level.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swetha/Documents/Repos/2D-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/game.dir/src/game_level.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/game_level.cpp.o -MF CMakeFiles/game.dir/src/game_level.cpp.o.d -o CMakeFiles/game.dir/src/game_level.cpp.o -c /home/swetha/Documents/Repos/2D-game/src/game_level.cpp
 
 CMakeFiles/game.dir/src/game_level.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/src/game_level.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swetha/Documents/Repos/Assignment1_2/src/game_level.cpp > CMakeFiles/game.dir/src/game_level.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swetha/Documents/Repos/2D-game/src/game_level.cpp > CMakeFiles/game.dir/src/game_level.cpp.i
 
 CMakeFiles/game.dir/src/game_level.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/game_level.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swetha/Documents/Repos/Assignment1_2/src/game_level.cpp -o CMakeFiles/game.dir/src/game_level.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swetha/Documents/Repos/2D-game/src/game_level.cpp -o CMakeFiles/game.dir/src/game_level.cpp.s
 
 CMakeFiles/game.dir/src/game_object.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/game_object.cpp.o: ../src/game_object.cpp
 CMakeFiles/game.dir/src/game_object.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swetha/Documents/Repos/Assignment1_2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/game.dir/src/game_object.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/game_object.cpp.o -MF CMakeFiles/game.dir/src/game_object.cpp.o.d -o CMakeFiles/game.dir/src/game_object.cpp.o -c /home/swetha/Documents/Repos/Assignment1_2/src/game_object.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swetha/Documents/Repos/2D-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/game.dir/src/game_object.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/game_object.cpp.o -MF CMakeFiles/game.dir/src/game_object.cpp.o.d -o CMakeFiles/game.dir/src/game_object.cpp.o -c /home/swetha/Documents/Repos/2D-game/src/game_object.cpp
 
 CMakeFiles/game.dir/src/game_object.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/src/game_object.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swetha/Documents/Repos/Assignment1_2/src/game_object.cpp > CMakeFiles/game.dir/src/game_object.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swetha/Documents/Repos/2D-game/src/game_object.cpp > CMakeFiles/game.dir/src/game_object.cpp.i
 
 CMakeFiles/game.dir/src/game_object.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/game_object.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swetha/Documents/Repos/Assignment1_2/src/game_object.cpp -o CMakeFiles/game.dir/src/game_object.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swetha/Documents/Repos/2D-game/src/game_object.cpp -o CMakeFiles/game.dir/src/game_object.cpp.s
 
 CMakeFiles/game.dir/src/main.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/game.dir/src/main.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swetha/Documents/Repos/Assignment1_2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/game.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/main.cpp.o -MF CMakeFiles/game.dir/src/main.cpp.o.d -o CMakeFiles/game.dir/src/main.cpp.o -c /home/swetha/Documents/Repos/Assignment1_2/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swetha/Documents/Repos/2D-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/game.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/main.cpp.o -MF CMakeFiles/game.dir/src/main.cpp.o.d -o CMakeFiles/game.dir/src/main.cpp.o -c /home/swetha/Documents/Repos/2D-game/src/main.cpp
 
 CMakeFiles/game.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swetha/Documents/Repos/Assignment1_2/src/main.cpp > CMakeFiles/game.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swetha/Documents/Repos/2D-game/src/main.cpp > CMakeFiles/game.dir/src/main.cpp.i
 
 CMakeFiles/game.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swetha/Documents/Repos/Assignment1_2/src/main.cpp -o CMakeFiles/game.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swetha/Documents/Repos/2D-game/src/main.cpp -o CMakeFiles/game.dir/src/main.cpp.s
 
 CMakeFiles/game.dir/src/resource_manager.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/resource_manager.cpp.o: ../src/resource_manager.cpp
 CMakeFiles/game.dir/src/resource_manager.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swetha/Documents/Repos/Assignment1_2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/game.dir/src/resource_manager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/resource_manager.cpp.o -MF CMakeFiles/game.dir/src/resource_manager.cpp.o.d -o CMakeFiles/game.dir/src/resource_manager.cpp.o -c /home/swetha/Documents/Repos/Assignment1_2/src/resource_manager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swetha/Documents/Repos/2D-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/game.dir/src/resource_manager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/resource_manager.cpp.o -MF CMakeFiles/game.dir/src/resource_manager.cpp.o.d -o CMakeFiles/game.dir/src/resource_manager.cpp.o -c /home/swetha/Documents/Repos/2D-game/src/resource_manager.cpp
 
 CMakeFiles/game.dir/src/resource_manager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/src/resource_manager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swetha/Documents/Repos/Assignment1_2/src/resource_manager.cpp > CMakeFiles/game.dir/src/resource_manager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swetha/Documents/Repos/2D-game/src/resource_manager.cpp > CMakeFiles/game.dir/src/resource_manager.cpp.i
 
 CMakeFiles/game.dir/src/resource_manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/resource_manager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swetha/Documents/Repos/Assignment1_2/src/resource_manager.cpp -o CMakeFiles/game.dir/src/resource_manager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swetha/Documents/Repos/2D-game/src/resource_manager.cpp -o CMakeFiles/game.dir/src/resource_manager.cpp.s
 
 CMakeFiles/game.dir/src/shader.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/shader.cpp.o: ../src/shader.cpp
 CMakeFiles/game.dir/src/shader.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swetha/Documents/Repos/Assignment1_2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/game.dir/src/shader.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/shader.cpp.o -MF CMakeFiles/game.dir/src/shader.cpp.o.d -o CMakeFiles/game.dir/src/shader.cpp.o -c /home/swetha/Documents/Repos/Assignment1_2/src/shader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swetha/Documents/Repos/2D-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/game.dir/src/shader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/shader.cpp.o -MF CMakeFiles/game.dir/src/shader.cpp.o.d -o CMakeFiles/game.dir/src/shader.cpp.o -c /home/swetha/Documents/Repos/2D-game/src/shader.cpp
 
 CMakeFiles/game.dir/src/shader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/src/shader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swetha/Documents/Repos/Assignment1_2/src/shader.cpp > CMakeFiles/game.dir/src/shader.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swetha/Documents/Repos/2D-game/src/shader.cpp > CMakeFiles/game.dir/src/shader.cpp.i
 
 CMakeFiles/game.dir/src/shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/shader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swetha/Documents/Repos/Assignment1_2/src/shader.cpp -o CMakeFiles/game.dir/src/shader.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swetha/Documents/Repos/2D-game/src/shader.cpp -o CMakeFiles/game.dir/src/shader.cpp.s
 
 CMakeFiles/game.dir/src/sprite_renderer.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/sprite_renderer.cpp.o: ../src/sprite_renderer.cpp
 CMakeFiles/game.dir/src/sprite_renderer.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swetha/Documents/Repos/Assignment1_2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/game.dir/src/sprite_renderer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/sprite_renderer.cpp.o -MF CMakeFiles/game.dir/src/sprite_renderer.cpp.o.d -o CMakeFiles/game.dir/src/sprite_renderer.cpp.o -c /home/swetha/Documents/Repos/Assignment1_2/src/sprite_renderer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swetha/Documents/Repos/2D-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/game.dir/src/sprite_renderer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/sprite_renderer.cpp.o -MF CMakeFiles/game.dir/src/sprite_renderer.cpp.o.d -o CMakeFiles/game.dir/src/sprite_renderer.cpp.o -c /home/swetha/Documents/Repos/2D-game/src/sprite_renderer.cpp
 
 CMakeFiles/game.dir/src/sprite_renderer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/src/sprite_renderer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swetha/Documents/Repos/Assignment1_2/src/sprite_renderer.cpp > CMakeFiles/game.dir/src/sprite_renderer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swetha/Documents/Repos/2D-game/src/sprite_renderer.cpp > CMakeFiles/game.dir/src/sprite_renderer.cpp.i
 
 CMakeFiles/game.dir/src/sprite_renderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/sprite_renderer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swetha/Documents/Repos/Assignment1_2/src/sprite_renderer.cpp -o CMakeFiles/game.dir/src/sprite_renderer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swetha/Documents/Repos/2D-game/src/sprite_renderer.cpp -o CMakeFiles/game.dir/src/sprite_renderer.cpp.s
 
 CMakeFiles/game.dir/src/stb_image.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/stb_image.cpp.o: ../src/stb_image.cpp
 CMakeFiles/game.dir/src/stb_image.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swetha/Documents/Repos/Assignment1_2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/game.dir/src/stb_image.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/stb_image.cpp.o -MF CMakeFiles/game.dir/src/stb_image.cpp.o.d -o CMakeFiles/game.dir/src/stb_image.cpp.o -c /home/swetha/Documents/Repos/Assignment1_2/src/stb_image.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swetha/Documents/Repos/2D-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/game.dir/src/stb_image.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/stb_image.cpp.o -MF CMakeFiles/game.dir/src/stb_image.cpp.o.d -o CMakeFiles/game.dir/src/stb_image.cpp.o -c /home/swetha/Documents/Repos/2D-game/src/stb_image.cpp
 
 CMakeFiles/game.dir/src/stb_image.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/src/stb_image.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swetha/Documents/Repos/Assignment1_2/src/stb_image.cpp > CMakeFiles/game.dir/src/stb_image.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swetha/Documents/Repos/2D-game/src/stb_image.cpp > CMakeFiles/game.dir/src/stb_image.cpp.i
 
 CMakeFiles/game.dir/src/stb_image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/stb_image.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swetha/Documents/Repos/Assignment1_2/src/stb_image.cpp -o CMakeFiles/game.dir/src/stb_image.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swetha/Documents/Repos/2D-game/src/stb_image.cpp -o CMakeFiles/game.dir/src/stb_image.cpp.s
 
 CMakeFiles/game.dir/src/text_renderer.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/text_renderer.cpp.o: ../src/text_renderer.cpp
 CMakeFiles/game.dir/src/text_renderer.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swetha/Documents/Repos/Assignment1_2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/game.dir/src/text_renderer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/text_renderer.cpp.o -MF CMakeFiles/game.dir/src/text_renderer.cpp.o.d -o CMakeFiles/game.dir/src/text_renderer.cpp.o -c /home/swetha/Documents/Repos/Assignment1_2/src/text_renderer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swetha/Documents/Repos/2D-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/game.dir/src/text_renderer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/text_renderer.cpp.o -MF CMakeFiles/game.dir/src/text_renderer.cpp.o.d -o CMakeFiles/game.dir/src/text_renderer.cpp.o -c /home/swetha/Documents/Repos/2D-game/src/text_renderer.cpp
 
 CMakeFiles/game.dir/src/text_renderer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/src/text_renderer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swetha/Documents/Repos/Assignment1_2/src/text_renderer.cpp > CMakeFiles/game.dir/src/text_renderer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swetha/Documents/Repos/2D-game/src/text_renderer.cpp > CMakeFiles/game.dir/src/text_renderer.cpp.i
 
 CMakeFiles/game.dir/src/text_renderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/text_renderer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swetha/Documents/Repos/Assignment1_2/src/text_renderer.cpp -o CMakeFiles/game.dir/src/text_renderer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swetha/Documents/Repos/2D-game/src/text_renderer.cpp -o CMakeFiles/game.dir/src/text_renderer.cpp.s
 
 CMakeFiles/game.dir/src/texture.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/texture.cpp.o: ../src/texture.cpp
 CMakeFiles/game.dir/src/texture.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swetha/Documents/Repos/Assignment1_2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/game.dir/src/texture.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/texture.cpp.o -MF CMakeFiles/game.dir/src/texture.cpp.o.d -o CMakeFiles/game.dir/src/texture.cpp.o -c /home/swetha/Documents/Repos/Assignment1_2/src/texture.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/swetha/Documents/Repos/2D-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/game.dir/src/texture.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/texture.cpp.o -MF CMakeFiles/game.dir/src/texture.cpp.o.d -o CMakeFiles/game.dir/src/texture.cpp.o -c /home/swetha/Documents/Repos/2D-game/src/texture.cpp
 
 CMakeFiles/game.dir/src/texture.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/src/texture.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swetha/Documents/Repos/Assignment1_2/src/texture.cpp > CMakeFiles/game.dir/src/texture.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/swetha/Documents/Repos/2D-game/src/texture.cpp > CMakeFiles/game.dir/src/texture.cpp.i
 
 CMakeFiles/game.dir/src/texture.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/texture.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swetha/Documents/Repos/Assignment1_2/src/texture.cpp -o CMakeFiles/game.dir/src/texture.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/swetha/Documents/Repos/2D-game/src/texture.cpp -o CMakeFiles/game.dir/src/texture.cpp.s
 
 # Object files for target game
 game_OBJECTS = \
@@ -258,7 +258,7 @@ game: /usr/lib64/libfreetype.so
 game: /usr/lib64/librt.so
 game: /usr/lib64/libm.so
 game: CMakeFiles/game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/swetha/Documents/Repos/Assignment1_2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/swetha/Documents/Repos/2D-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -270,6 +270,6 @@ CMakeFiles/game.dir/clean:
 .PHONY : CMakeFiles/game.dir/clean
 
 CMakeFiles/game.dir/depend:
-	cd /home/swetha/Documents/Repos/Assignment1_2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/swetha/Documents/Repos/Assignment1_2 /home/swetha/Documents/Repos/Assignment1_2 /home/swetha/Documents/Repos/Assignment1_2/build /home/swetha/Documents/Repos/Assignment1_2/build /home/swetha/Documents/Repos/Assignment1_2/build/CMakeFiles/game.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/swetha/Documents/Repos/2D-game/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/swetha/Documents/Repos/2D-game /home/swetha/Documents/Repos/2D-game /home/swetha/Documents/Repos/2D-game/build /home/swetha/Documents/Repos/2D-game/build /home/swetha/Documents/Repos/2D-game/build/CMakeFiles/game.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/game.dir/depend
 

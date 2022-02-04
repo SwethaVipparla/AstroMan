@@ -20,7 +20,7 @@ public:
     // constructor
     GameLevel() { }
     // loads level from file
-    void Load(unsigned int levelWidth, unsigned int levelHeight);
+    void Load(unsigned int levelWidth, unsigned int levelHeight, int level);
     // render level
     void Draw(SpriteRenderer &renderer);
     // check if the level is completed (all non-solid tiles are destroyed)

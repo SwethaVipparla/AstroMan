@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -D_GLFW_USE_CONFIG_H
 
-C_INCLUDES = -I/home/swetha/Documents/Repos/Assignment1_2/libraries/glfw/include -I/home/swetha/Documents/Repos/Assignment1_2/libraries/glfw/src -I/home/swetha/Documents/Repos/Assignment1_2/build/libraries/glfw/src
+C_INCLUDES = -I/home/swetha/Documents/Repos/2D-game/libraries/glfw/include -I/home/swetha/Documents/Repos/2D-game/libraries/glfw/src -I/home/swetha/Documents/Repos/2D-game/build/libraries/glfw/src
 
 C_FLAGS = -fPIC -Wall -std=c99
 

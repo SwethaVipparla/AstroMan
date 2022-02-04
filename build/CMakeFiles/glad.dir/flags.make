@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/swetha/Documents/Repos/Assignment1_2/libraries/glad/include
+C_INCLUDES = -I/home/swetha/Documents/Repos/2D-game/libraries/glad/include
 
 C_FLAGS = 
 

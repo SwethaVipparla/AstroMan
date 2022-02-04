@@ -1,7 +1,7 @@
 CMakeFiles/game.dir/src/stb_image.cpp.o: \
- /home/swetha/Documents/Repos/Assignment1_2/src/stb_image.cpp \
+ /home/swetha/Documents/Repos/2D-game/src/stb_image.cpp \
  /usr/include/stdc-predef.h \
- /home/swetha/Documents/Repos/Assignment1_2/include/stb_image.h \
+ /home/swetha/Documents/Repos/2D-game/include/stb_image.h \
  /usr/include/stdio.h /usr/include/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/sys/cdefs.h \
  /usr/include/bits/wordsize.h /usr/include/bits/long-double.h \

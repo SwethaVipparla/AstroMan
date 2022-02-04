@@ -1,4 +1,4 @@
-# Install script for directory: /home/swetha/Documents/Repos/Assignment1_2/libraries/glfw/src
+# Install script for directory: /home/swetha/Documents/Repos/2D-game/libraries/glfw/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

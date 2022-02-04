@@ -1,9 +1,9 @@
 libraries/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o: \
- /home/swetha/Documents/Repos/Assignment1_2/libraries/glfw/src/vulkan.c \
+ /home/swetha/Documents/Repos/2D-game/libraries/glfw/src/vulkan.c \
  /usr/include/stdc-predef.h \
- /home/swetha/Documents/Repos/Assignment1_2/libraries/glfw/src/internal.h \
- /home/swetha/Documents/Repos/Assignment1_2/build/libraries/glfw/src/glfw_config.h \
- /home/swetha/Documents/Repos/Assignment1_2/libraries/glfw/src/../include/GLFW/glfw3.h \
+ /home/swetha/Documents/Repos/2D-game/libraries/glfw/src/internal.h \
+ /home/swetha/Documents/Repos/2D-game/build/libraries/glfw/src/glfw_config.h \
+ /home/swetha/Documents/Repos/2D-game/libraries/glfw/src/../include/GLFW/glfw3.h \
  /usr/lib/gcc/x86_64-redhat-linux/11/include/stddef.h \
  /usr/lib/gcc/x86_64-redhat-linux/11/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
@@ -14,7 +14,7 @@ libraries/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o: \
  /usr/include/bits/typesizes.h /usr/include/bits/time64.h \
  /usr/include/bits/wchar.h /usr/include/bits/stdint-intn.h \
  /usr/include/bits/stdint-uintn.h \
- /home/swetha/Documents/Repos/Assignment1_2/libraries/glfw/src/x11_platform.h \
+ /home/swetha/Documents/Repos/2D-game/libraries/glfw/src/x11_platform.h \
  /usr/include/unistd.h /usr/include/bits/posix_opt.h \
  /usr/include/bits/confname.h /usr/include/bits/unistd_ext.h \
  /usr/include/signal.h /usr/include/bits/signum-generic.h \
@@ -44,7 +44,7 @@ libraries/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o: \
  /usr/include/X11/extensions/xfixeswire.h \
  /usr/include/X11/extensions/shape.h \
  /usr/include/X11/extensions/shapeconst.h \
- /home/swetha/Documents/Repos/Assignment1_2/libraries/glfw/src/posix_thread.h \
+ /home/swetha/Documents/Repos/2D-game/libraries/glfw/src/posix_thread.h \
  /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/bits/types/struct_timespec.h /usr/include/bits/endian.h \
  /usr/include/bits/endianness.h /usr/include/time.h \
@@ -56,10 +56,10 @@ libraries/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o: \
  /usr/include/bits/struct_rwlock.h /usr/include/bits/setjmp.h \
  /usr/include/bits/types/__sigset_t.h \
  /usr/include/bits/types/struct___jmp_buf_tag.h \
- /home/swetha/Documents/Repos/Assignment1_2/libraries/glfw/src/posix_time.h \
- /home/swetha/Documents/Repos/Assignment1_2/libraries/glfw/src/xkb_unicode.h \
- /home/swetha/Documents/Repos/Assignment1_2/libraries/glfw/src/glx_context.h \
- /home/swetha/Documents/Repos/Assignment1_2/libraries/glfw/src/linux_joystick.h \
+ /home/swetha/Documents/Repos/2D-game/libraries/glfw/src/posix_time.h \
+ /home/swetha/Documents/Repos/2D-game/libraries/glfw/src/xkb_unicode.h \
+ /home/swetha/Documents/Repos/2D-game/libraries/glfw/src/glx_context.h \
+ /home/swetha/Documents/Repos/2D-game/libraries/glfw/src/linux_joystick.h \
  /usr/include/linux/input.h /usr/include/sys/time.h \
  /usr/include/bits/types/struct_timeval.h /usr/include/sys/select.h \
  /usr/include/bits/select.h /usr/include/bits/types/sigset_t.h \
@@ -75,7 +75,7 @@ libraries/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o: \
  /usr/include/asm/posix_types_64.h /usr/include/asm-generic/posix_types.h \
  /usr/include/linux/input-event-codes.h /usr/include/linux/limits.h \
  /usr/include/regex.h \
- /home/swetha/Documents/Repos/Assignment1_2/libraries/glfw/src/egl_context.h \
- /home/swetha/Documents/Repos/Assignment1_2/libraries/glfw/src/osmesa_context.h \
+ /home/swetha/Documents/Repos/2D-game/libraries/glfw/src/egl_context.h \
+ /home/swetha/Documents/Repos/2D-game/libraries/glfw/src/osmesa_context.h \
  /usr/include/assert.h /usr/include/string.h /usr/include/stdlib.h \
  /usr/include/bits/stdlib-float.h

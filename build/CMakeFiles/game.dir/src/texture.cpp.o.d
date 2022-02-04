@@ -1,5 +1,5 @@
 CMakeFiles/game.dir/src/texture.cpp.o: \
- /home/swetha/Documents/Repos/Assignment1_2/src/texture.cpp \
+ /home/swetha/Documents/Repos/2D-game/src/texture.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/c++/11/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -121,7 +121,7 @@ CMakeFiles/game.dir/src/texture.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/swetha/Documents/Repos/Assignment1_2/include/texture.h \
- /home/swetha/Documents/Repos/Assignment1_2/libraries/glad/include/glad/glad.h \
- /home/swetha/Documents/Repos/Assignment1_2/libraries/glad/include/KHR/khrplatform.h \
+ /home/swetha/Documents/Repos/2D-game/include/texture.h \
+ /home/swetha/Documents/Repos/2D-game/libraries/glad/include/glad/glad.h \
+ /home/swetha/Documents/Repos/2D-game/libraries/glad/include/KHR/khrplatform.h \
  /usr/include/inttypes.h

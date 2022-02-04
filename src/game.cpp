@@ -85,12 +85,20 @@ void Game::Init()
                                               -BALL_RADIUS * 2.0f);
     Ball = new BallObject(ballPos, BALL_RADIUS, INITIAL_BALL_VELOCITY,
         ResourceManager::GetTexture("player"));
-    glm::vec2 e1Pos = glm::vec2(this->Height / 2, this->Width / 2);
+    glm::vec2 e1Pos = playerPos + glm::vec2(PLAYER_SIZE.x / 2.0f - BALL_RADIUS, 
+                                              -BALL_RADIUS * 2.0f);
     Enemy = new BallObject(e1Pos, BALL_RADIUS, INITIAL_BALL_VELOCITY,
                             ResourceManager::GetTexture("enemy"));
+    Enemy->Stuck = false;
     
     Text = new TextRenderer(this->Width, this->Height);
     Text->Load("../src/ocraext.TTF", 100);
+
+    gameEnded = new TextRenderer(this->Width, this->Height);
+    gameEnded->Load("../src/ocraext.TTF", 200);
+
+    newLevel = new TextRenderer(this->Width, this->Height);
+    newLevel->Load("../src/ocraext.TTF", 200);
 }
 
 void Game::Update(float dt)
@@ -101,8 +109,16 @@ void Game::Update(float dt)
 
     if(Ball->Position.y <= 0.01f)
     {
-        this->Level = (this->Level + 1) % 3;
-        Ball->Position.y = (this->Height - PLAYER_SIZE.y)/2;
+        if(this->Level == 2)
+        {
+            this->State = GAME_WIN;
+            this->Levels[0].Load(this->Width, this->Height, 1);
+        }
+        else
+        {
+            this->Level = (this->Level + 1);
+            Ball->Position.y = (this->Height - PLAYER_SIZE.y)/2;
+        }
     }
 }
 
@@ -161,7 +177,28 @@ void Game::Render()
         tim << times;
         Text->RenderText("Score: " + scr.str() + "   Level: " + lev.str() + "   Elapsed Time: " + tim.str(), 1.0f, 1.0f, 0.25f);
     }
+    else if (this->State == GAME_MENU)
+    {
+        Renderer->DrawSprite(ResourceManager::GetTexture("background"),
+                             glm::vec2(0.0f, 0.0f), glm::vec2(this->Width, this->Height), 0.0f);
+        gameEnded->RenderText("F, you collided with an asteroid and now you don't exist :(", 1.0f, 1.0f, 0.25f);
+    }
+    else if (this->State == GAME_WIN)
+    {
+        Renderer->DrawSprite(ResourceManager::GetTexture("background"),
+                             glm::vec2(0.0f, 0.0f), glm::vec2(this->Width, this->Height), 0.0f);
+        gameEnded->RenderText("You Won! Best Astronaut :)", 1.0f, 1.0f, 0.25f);
+    }
 }
+
+void Game::ResetPlayer()
+{
+    // reset player/ball stats
+    // Player->Size = PLAYER_SIZE;
+    // Player->Position = glm::vec2(this->Width / 2.0f - PLAYER_SIZE.x / 2.0f, this->Height - PLAYER_SIZE.y);
+    Ball->Reset(Player->Position + glm::vec2(PLAYER_SIZE.x / 2.0f - BALL_RADIUS, -(BALL_RADIUS * 2.0f)), INITIAL_BALL_VELOCITY);
+}
+
 
 bool CheckCollision(GameObject &one, GameObject &two);
 Collision CheckCollision(BallObject &one, GameObject &two);
@@ -230,11 +267,56 @@ void Game::DoCollisions()
         if (!box.Destroyed)
         {
             if(box.IsDoor)
-                continue;
+            {
+                    continue;
+            }
             Collision collision = CheckCollision(*Ball, box);
             Collision enemy1 = CheckCollision(*Ball, *Enemy);
+            Collision collision2 = CheckCollision(*Enemy, box);
+
+            if (std::get<0>(collision2)) // if collision is true
+            {
+                 if (!box.IsSolid)
+                {
+                    continue;
+                }
+
+                Direction dir = std::get<1>(collision2);
+                glm::vec2 diff_vector = std::get<2>(collision2);
+
+                if (dir == LEFT || dir == RIGHT) // horizontal collision
+                {
+                    Enemy->Velocity.x = -Enemy->Velocity.x; // reverse horizontal velocity
+                    // relocate
+                    float penetration = Enemy->Radius - std::abs(diff_vector.x);
+                    if (dir == LEFT)
+                        Enemy->Position.x += penetration; // move ball to right
+                    else
+                        Enemy->Position.x -= penetration; // move ball to left;
+                }
+                else // vertical collision
+                {
+                    Enemy->Velocity.y = -Enemy->Velocity.y; // reverse vertical velocity
+                    // relocate
+                    float penetration = Enemy->Radius - std::abs(diff_vector.y);
+                    if (dir == UP)
+                        Enemy->Position.y -= penetration; // move ball bback up
+                    else
+                        Enemy->Position.y += penetration; // move ball back down
+                }
+                    
+            }
     
-        
+            if (std::get<0>(enemy1))
+            {
+                // std::cout << "game ended 1";
+                this->State = GAME_MENU;
+
+                // std::cout << "Score: " << this->Score;
+                gameEnded->RenderText("GAME OVER", this->Width / 2, this->Height / 2, 1.0f);
+                // sleep(2);
+                // exit(-1);
+            }
 
             if (std::get<0>(collision)) // if collision is true
             {
@@ -249,29 +331,28 @@ void Game::DoCollisions()
                 // collision resolution
                 Direction dir = std::get<1>(collision);
                 glm::vec2 diff_vector = std::get<2>(collision);
-                    if (!(!box.IsSolid)) // don't do collision resolution on non-solid bricks if pass-through activated
-                    {
-                        if (dir == LEFT || dir == RIGHT) // horizontal collision
-                        {
-                            Ball->Velocity.x = -Ball->Velocity.x; // reverse horizontal velocity
-                            // relocate
-                            float penetration = Ball->Radius - std::abs(diff_vector.x);
-                            if (dir == LEFT)
-                                Ball->Position.x += penetration; // move ball to right
-                            else
-                                Ball->Position.x -= penetration; // move ball to left;
-                        }
-                        else // vertical collision
-                        {
-                            Ball->Velocity.y = -Ball->Velocity.y; // reverse vertical velocity
-                            // relocate
-                            float penetration = Ball->Radius - std::abs(diff_vector.y);
-                            if (dir == UP)
-                                Ball->Position.y -= penetration; // move ball bback up
-                            else
-                                Ball->Position.y += penetration; // move ball back down
-                        }
-                    }
+
+                if (dir == LEFT || dir == RIGHT) // horizontal collision
+                {
+                    Ball->Velocity.x = -Ball->Velocity.x; // reverse horizontal velocity
+                    // relocate
+                    float penetration = Ball->Radius - std::abs(diff_vector.x);
+                    if (dir == LEFT)
+                        Ball->Position.x += penetration; // move ball to right
+                    else
+                        Ball->Position.x -= penetration; // move ball to left;
+                }
+                else // vertical collision
+                {
+                    Ball->Velocity.y = -Ball->Velocity.y; // reverse vertical velocity
+                    // relocate
+                    float penetration = Ball->Radius - std::abs(diff_vector.y);
+                    if (dir == UP)
+                        Ball->Position.y -= penetration; // move ball bback up
+                    else
+                        Ball->Position.y += penetration; // move ball back down
+                }
+                    
             }
         }    
     }

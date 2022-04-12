@@ -20,13 +20,15 @@ const glm::vec2 INITIAL_BALL_VELOCITY(100.0f, -350.0f);
 // Radius of the ball object
 const float BALL_RADIUS = 30.0f;
 
-SpriteRenderer  *Renderer;
+SpriteRenderer    *Renderer;
 GameObject        *Player;
 BallObject        *Ball;
-BallObject *Enemy;
-TextRenderer *Text;
-TextRenderer *gameEnded;
-TextRenderer *newLevel;
+BallObject        *Enemy0;
+BallObject        *Enemy1;
+BallObject        *Enemy2;
+TextRenderer      *Text;
+TextRenderer      *gameEnded;
+TextRenderer      *newLevel;
 
 time_t start = time(0);
 
@@ -84,13 +86,18 @@ void Game::Init()
     glm::vec2 ballPos = playerPos + glm::vec2(PLAYER_SIZE.x / 2.0f - BALL_RADIUS, 
                                               -BALL_RADIUS * 2.0f);
     Ball = new BallObject(ballPos, BALL_RADIUS, INITIAL_BALL_VELOCITY,
-        ResourceManager::GetTexture("player"));
-    glm::vec2 e1Pos = playerPos + glm::vec2(PLAYER_SIZE.x / 2.0f - BALL_RADIUS, 
-                                              -BALL_RADIUS * 2.0f);
-    Enemy = new BallObject(e1Pos, BALL_RADIUS, INITIAL_BALL_VELOCITY,
-                            ResourceManager::GetTexture("enemy"));
-    Enemy->Stuck = false;
+        ResourceManager::GetTexture("player")); 
     
+    Enemy0 = new BallObject(ballPos, BALL_RADIUS, INITIAL_BALL_VELOCITY,
+                            ResourceManager::GetTexture("enemy"));
+    Enemy0->Stuck = false;
+    Enemy1 = new BallObject(ballPos, BALL_RADIUS, INITIAL_BALL_VELOCITY,
+                            ResourceManager::GetTexture("enemy"));
+    Enemy1->Stuck = false;
+    Enemy2 = new BallObject(ballPos, BALL_RADIUS, INITIAL_BALL_VELOCITY,
+                            ResourceManager::GetTexture("enemy"));
+    Enemy2->Stuck = false;
+
     Text = new TextRenderer(this->Width, this->Height);
     Text->Load("../src/ocraext.TTF", 100);
 
@@ -104,7 +111,14 @@ void Game::Init()
 void Game::Update(float dt)
 {
     Ball->Move(dt, this->Width);
-    Enemy->Move(dt, this->Width);
+    Enemy0->Move(dt, this->Width);
+
+    if(this->Level > 0)
+        Enemy1->Move(dt, this->Width);
+
+    if(this->Level > 1)
+        Enemy2->Move(dt, this->Width);
+
     this->DoCollisions();
 
     if(Ball->Position.y <= 0.01f)
@@ -169,7 +183,13 @@ void Game::Render()
         scr << this->Score;
         lev << this->Level + 1;
 
-        Enemy->Draw(*Renderer);
+        Enemy0->Draw(*Renderer);
+
+        if(this->Level > 0)
+            Enemy1->Move(dt, this->Width);
+
+        if(this->Level > 1)
+            Enemy2->Move(dt, this->Width);
 
         double seconds = difftime(time(0), start);
         char times[100];
@@ -271,8 +291,21 @@ void Game::DoCollisions()
                     continue;
             }
             Collision collision = CheckCollision(*Ball, box);
-            Collision enemy1 = CheckCollision(*Ball, *Enemy);
-            Collision collision2 = CheckCollision(*Enemy, box);
+            Collision enemy1 = CheckCollision(*Ball, *Enemy0);
+            Collision collision2 = CheckCollision(*Enemy0, box);
+
+            if(this->Level > 0)
+            {
+                Collision enemy2 = CheckCollision(*Ball, *Enemy1);
+                Collision collision3 = CheckCollision(*Enemy1, box);
+
+                if (std::get<0>(enemy2))
+                {
+                    this->State = GAME_MENU;
+
+                    gameEnded->RenderText("GAME OVER", this->Width / 2, this->Height / 2, 1.0f);
+                }
+            }
 
             if (std::get<0>(collision2)) // if collision is true
             {
@@ -309,13 +342,9 @@ void Game::DoCollisions()
     
             if (std::get<0>(enemy1))
             {
-                // std::cout << "game ended 1";
                 this->State = GAME_MENU;
 
-                // std::cout << "Score: " << this->Score;
                 gameEnded->RenderText("GAME OVER", this->Width / 2, this->Height / 2, 1.0f);
-                // sleep(2);
-                // exit(-1);
             }
 
             if (std::get<0>(collision)) // if collision is true
